@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href= "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link rel="stylesheet" href="boot.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".test").click(function(){
+    $(this).hide();
+  });
+});
+</script>
+</head>
+<body style="background-color: #23242a;">
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand navbar-dark " style="background-color: #23242a ;">
+<div class="container-fluid">
+<a class="navbar-brand" href="home.html"> <img style="border-radius: 10px ;" src = "images/swag.png" height = "65" width="70">
+</a><div class="h3">Swag Travels</div>
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+<!-- NAVBAR LINKS -->
+<li class="nav-item">
+<a class="nav-link active" href="#" style="color: aqua;">About Us</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#" style="color: aqua;">Contact</a>
+</li>
+<!--DROPDOWN -->
+<li class="nav-item dropdown">
+<a
+class="nav-link dropdown-toggle" href="#"
+id="navbarDropdown"
+role="button" data-bs-toggle="dropdown" style="color: aqua;"> Contents </a>
+<!-- DROPDOWN OPTIONS -->
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="#"> Page 1
+</a>
+</li>
+<li><a class="dropdown-item" href="#"> Page 2
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<!-- SEARCH BOX -->
+<form class="d-flex">
+<input class="form-control me-2" type="search" placeholder="Search site" />
+<button class="btn btn-primary" type="submit">
+Search
+</button>
+</form>
+</div>
+</nav>
+<script src= "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/b ootstrap.bundle.min.js" ></script>
+
+<div class="box">
+  <div class="form">
+   <form action="test.php" method="get">
+    <h1>Register</h1>
+    <div class="inputBox">
+      <input name="fname" type="text" required="required">
+      <span>First name</span>
+      <i></i>      
+    </div>
+    <div class="inputBox">
+      <input name="lname" type="text" required="required">
+      <span>Last name</span>
+      <i></i>      
+    </div>
+    <div class="inputBox">
+      <input name="phnumber" type="tel" required="required">
+      <span>Phone number</span>
+      <i></i>      
+    </div>
+    <div class="inputBox">
+      <input name="email" type="email" required="required">
+      <span>E-mail</span>
+      <i></i>      
+    </div>
+    <div class="inputBox">
+      <input name="age" type="number" required="required">
+      <span>Age</span>
+      <i></i>     
+    </div><br>
+    <div class="new">
+      Gender:<br>
+       <input type="radio" value="male" name="male">Male<br>
+       <input type="radio" value="female" name="female">Female<br>
+       <input type="radio" value="other" name="other">Other
+
+
+    </div>
+    <div class="inputBox">
+      <input name="distance" type="text" required="required">
+      <span>Distance</span>
+      <i></i> 
+    </div>
+    <div class="inputBox">
+      <input name="date" type="date" required="required">
+      <i></i>      
+    </div><br>
+    <input type="button" id="btnn" value="Date">
+    <p id="demo" style="color: aqua;"></p>
+    <div class="inputBox">
+      <input name="anum" type="text" required="required">
+      <span>Aadhar number</span>
+      <i></i>      
+    </div>
+    
+    <div class="new">Upload png file of aadhar:</div>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+      <input type="file" name="fileup" id="fileup"><br><br>
+      <input type="button" value="Upload Image" name="submit" id="fileup" class="test"><br></br>
+      <input type="submit" name="submit" value="Submit">
+
+    </form>
+    <br>
+</div>
+
+
+  <!-- TABLE-->
+<br><br>
+<h1 style="color:white;font-size:50px;text-align: center;text-shadow: 4pc;">Price Chart</h1>  
+<br>
+<table  class="table table-dark table-bordered text-center text-shadow ">
+        <thead>
+          <tr>
+            <th scope="col">S.No</th>
+            <th scope="col">KM range</th>
+            <th scope="col">Price per KM</th>
+        
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>0 to 15</td>
+            <td>12/-</td>
+            
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>15 to 45</td>
+            <td>15/- </td>
+            
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>45 to 70</td>
+            <td>17/- </td>
+            
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>70 to 100</td>
+            <td>21/- </td>
+            
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>above 100</td>
+            <td>29/- </td>
+            
+          </tr>
+        
+        </tbody>
+      </table>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+
+    .navbar
+    {
+        border-bottom:5px solid aqua;
+        border-radius: 20px;
+    }
+    .card
+    {
+        border-radius: 10px;
+        border: 3px solid aqua;
+        font-family: poppins;
+        
+      
+    }
+    .btn
+    {
+        color: #23242a;
+        align-items: center;
+        font-family: poppins;
+    }
+  </style>
+  <script>
+    document.getElementById("btnn").addEventListener("click", displayDate);
+    
+    function displayDate() {
+      document.getElementById("demo").innerHTML = Date();
+    }
+    </script>
+</body>
+</html>
